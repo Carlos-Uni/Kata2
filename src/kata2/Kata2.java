@@ -11,12 +11,12 @@ Version1
 public class Kata2 {
 
     public static void main(String[] args) {
-        Integer [] data = {1,9,3,52,78,0,63,95,10,52,6,8,4,3,9};
+        String[] data = {"Carlos","Pepe","Alfredo","Rosa","María","Rosa","Carlos"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
 
         
-        for(Map.Entry<Integer, Integer> entry : histogr.entrySet()){
+        for(Map.Entry<String, Integer> entry : histogr.entrySet()){
             System.out.println(entry.getKey() + " ==> " + entry.getValue());
         }
     
